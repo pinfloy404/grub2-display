@@ -4,11 +4,7 @@
 ![grub](https://img.shields.io/badge/GRUB-2.12-mintcream)
 ![gpl](https://img.shields.io/badge/License-GPLv3-crimson)
 
-A simple script in Bash to fix a few things for GRUB2.
-
-## Overview
-
-This script adds and changes some options to the GRUB2 configuration and rebuilds it automatically.
+This script customizes and updates some GRUB2 boot menu display options.
 
 > [!WARNING]
 > This script was tested for ***Fedora 43*** ***Fedora 44*** and  with ***GRUB 2.12***.
