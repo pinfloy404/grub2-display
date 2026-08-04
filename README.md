@@ -1,4 +1,4 @@
-# GRUB2 Fixes
+# GRUB2 Display
 
 ![bash](https://img.shields.io/badge/Bash_Shell-Chartreuse?logo=gnubash&logoColor=white)
 ![grub](https://img.shields.io/badge/GRUB-2.12-mintcream)
