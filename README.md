@@ -1,13 +1,20 @@
 # GRUB2 Display
 
 ![bash](https://img.shields.io/badge/Bash_Shell-Chartreuse?logo=gnubash&logoColor=white)
+![fedora](https://img.shields.io/badge/Fedora-43%2B-dodgerblue)
 ![grub](https://img.shields.io/badge/GRUB-2.12-mintcream)
 ![gpl](https://img.shields.io/badge/License-GPLv3-crimson)
 
 This script customizes and updates some GRUB2 boot menu display options.
 
-> [!WARNING]
-> This script was tested for ***Fedora 43*** ***Fedora 44*** and  with ***GRUB 2.12***.
+## Tests
+
+| Distro | GRUB | Test |
+| :---: | :---: | :---: |
+| Fedora 43 | 2.12 | :white_check_mark: |
+| Fedora 44 | 2.12 | :white_check_mark: |
+
+## Configurations
 
 ### Screen resolution
 
@@ -16,7 +23,7 @@ Sometimes GRUB2 don't detects automatically the screen resolution, so everytime 
 This script adds and changes these parts.
 
 | Option | Description |
-| --- | --- |
+| :---: | :---: |
 | GRUB_TERMINAL_OUTPUT="gfxterm" | Changes the option from **console** to **gfxterm** |
 | GRUB_GFXMODE=auto | Adds this option to detect automatically screen resolution |
 
@@ -27,7 +34,7 @@ If there are other OS in another hard drive, GRUB2 automatically detects it and 
 This script adds and changes this part.
 
 | Option | Description |
-| --- | --- |
+| :---: | :---: |
 | GRUB_DISABLE_OS_PROBER=true | Disables os-prober completely |
 
 ## Usage
@@ -40,7 +47,7 @@ To run the Bash script, simply run the following command.
 > **I'm not responsible if your PC doesn't boot never again** 😥😥😖😖
 
 ```bash
-sh fix.sh
+sh display.sh
 ```
 
 ### Options
@@ -48,7 +55,7 @@ sh fix.sh
 You can use the script with this command structure.
 
 ```bash
-sh fix.sh [options...] [value]
+sh display.sh [options...] [value]
 ```
 
 Here is the list of options you can use, for more detail, you can read the [Overview](#overview) section.
@@ -56,7 +63,7 @@ Here is the list of options you can use, for more detail, you can read the [Over
 #### List of options
 
 | Simple | Complete | Description |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | `-c` | `--configuration-file` | Input a custom path for GRUB2 configuration file |
 | `-t` | `--terminal-output` | Changes *GRUB_TERMINAL_OUTPUT* option from **console** to **gfxterm** |
 | `-g` | `--gfxmode` | Adds the *GRUB_GFXMODE* option with **auto** value |
